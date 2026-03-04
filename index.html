@@ -909,30 +909,33 @@
 
         .experience-badge {
             position: absolute;
-            bottom: -30px;
-            right: -30px;
+            bottom: -20px;
+            right: -20px;
             background: var(--primary-maroon);
             color: white;
-            padding: 25px;
+            padding: 15px;
             border-radius: 50%;
-            width: 130px;
-            height: 130px;
+            width: 100px;
+            height: 100px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             box-shadow: 0 10px 30px rgba(107, 29, 78, 0.4);
+            z-index: 10;
         }
 
         .experience-badge span:first-child {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             font-family: 'Playfair Display', serif;
+            line-height: 1;
         }
 
         .experience-badge span:last-child {
-            font-size: 0.8rem;
+            font-size: 0.65rem;
             text-align: center;
+            line-height: 1.2;
         }
 
         .about-text {
@@ -1581,8 +1584,19 @@
             }
 
             .experience-badge {
-                bottom: -20px;
-                right: 20px;
+                width: 80px;
+                height: 80px;
+                padding: 10px;
+                bottom: -15px;
+                right: 10px;
+            }
+
+            .experience-badge span:first-child {
+                font-size: 1.5rem;
+            }
+
+            .experience-badge span:last-child {
+                font-size: 0.55rem;
             }
 
             .contact-content {
@@ -1620,52 +1634,128 @@
                 display: block;
             }
 
+            .hero {
+                padding: 100px 5% 40px;
+                min-height: auto;
+            }
+
+            .trust-badge {
+                padding: 6px 14px 6px 10px;
+                margin-bottom: 15px;
+            }
+
+            .trust-badge .temple-icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            .trust-badge span {
+                font-size: 0.85rem;
+            }
+
             .hero-text h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
+                margin-bottom: 8px;
+            }
+
+            .hero-divider {
+                margin-bottom: 15px;
+                margin-top: 8px;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 12px 25px;
+                font-size: 0.95rem;
+                width: 100%;
+                justify-content: center;
             }
 
             .hero-features {
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
+                margin-top: 25px;
+            }
+
+            .hero-feature {
+                justify-content: center;
             }
 
             .hero-food-showcase {
-                width: 320px;
-                height: 350px;
+                width: 280px;
+                height: 300px;
+                margin-top: 30px;
             }
 
             .food-card-1 {
-                width: 180px;
-                height: 180px;
+                width: 160px;
+                height: 160px;
+                top: 0;
+                left: 0;
             }
 
             .food-card-2 {
-                width: 130px;
-                height: 130px;
-                top: 30px;
+                width: 110px;
+                height: 110px;
+                top: 20px;
+                right: 0;
             }
 
             .food-card-3 {
-                width: 150px;
-                height: 150px;
-                left: 40px;
+                width: 130px;
+                height: 130px;
+                bottom: 0;
+                left: 50px;
             }
 
             .food-label {
-                font-size: 0.8rem;
-                padding: 20px 10px 10px;
+                font-size: 0.7rem;
+                padding: 15px 8px 8px;
             }
 
             .section-title h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .about-highlights {
                 grid-template-columns: 1fr;
             }
 
+            .experience-badge {
+                width: 70px;
+                height: 70px;
+                padding: 8px;
+                bottom: -10px;
+                right: 5px;
+            }
+
+            .experience-badge span:first-child {
+                font-size: 1.3rem;
+            }
+
+            .experience-badge span:last-child {
+                font-size: 0.5rem;
+            }
+
             .testimonial-content {
                 padding: 30px 20px;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
             }
         }
 
